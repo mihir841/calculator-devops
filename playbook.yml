@@ -1,0 +1,8 @@
+---
+- name: Pull docker image
+  hosts: all
+  tasks:
+    - name: Pull Image
+      docker_image:
+        name: vyashemang/mini_calc_1
+        source: pull
